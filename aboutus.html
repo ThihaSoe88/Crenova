@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favi-con.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bg-navbar {
+        background-color: #413e37;
+      }
+      .navbar a {
+        color: white;
+      }
+      .active {
+        color: white !important;
+        font-weight: bold;
+        border-bottom: 2px solid white;
+      }
+      .navbar-nav a:hover {
+        color: white !important;
+        border-bottom: 2px solid white;
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      #greetingsection p{
+        line-height: 3rem;
+        font-size: 25px;
+      }
+       #ourMission h3{
+        font-weight: bold;}
+        #ourMission p , ul{
+            line-height: 1.5;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg bg-navbar">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">CreaNova Academy</a>
+
+        <!-- Toggler icon -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!-- menu list -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- form -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Greeting Sections -->
+     <section id="greetingsection">
+     <div class="container my-3">
+      <h1 class="text-center border-bottom">Greetings From CreaNova Team!</h1>
+      <p class="mt-3 text-center">CreaNova is dedicated to providing <br>
+      comprehensive web development courses <br> to individuals who are looking to enhance or <br>
+       switch their  careers in web development. <br>
+      We believe in delivering hands-on experience and<br>real-world projects that equip the learners 
+    from <br> Crenova<br> with the necessary skills and knowledge<br>
+  to succeed in the industry. </p>
+    </div>
+    </section>
+
+
+      <!-- Our Mission Section -->
+      <section id="ourMission" class="container my-5">
+      <div class="row">
+        <div class="col-lg-4 mt-2">
+          <h3 class="">
+            <i class="bi bi-file-earmark-bar-graph me-2"></i>Mission
+          </h3>
+          <p>
+            Our mission is to deliver hands-on experience and real-world
+            projects that equip our students with the necessary skills and
+            knowledge to succeed in the web development industry.
+          </p>
+        </div>
+
+        <div class="col-lg-4 mt-2">
+          <h3 class=""><i class="bi bi-lightbulb-fill me-2"></i>Vision</h3>
+          <p>
+            To be the leading provider of comprehensive web development
+            education, equipping students with the skills and knowledge
+            necessary to succeed in the industry.
+          </p>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <h3 class="">
+           <i class="bi bi-graph-up-arrow me-2"></i>Goals
+          </h3>
+          <ul>
+            <li>To deliver high-quality education and training to our students.</li>
+            <li>To provide personalized attention and support to our students.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+     <!-- About Us Section -->
+     <section class="about-us container">
+      <div class="row my-3">
+        <div class="col-md-4 col-lg-3">
+          <h3 class="text-center text-md-start h6">Creanova Academy</h3>
+          <div class="text-center text-md-start">
+            <a href="#" class="d-block text-decoration-none py-2">About</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >What We Offer</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Careers</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Become a partner</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <h3 class="text-center text-md-start h6">Community</h3>
+          <div class="text-center text-md-start">
+            <a href="#" class="d-block text-decoration-none py-2">Mentees</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Partners</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Tech Blog</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Teaching Centers</a
+            >
+          </div>
+        </div>
+    
+        <div class="col-md-4 col-lg-3">
+          <h3 class="text-center text-md-start h6">More</h3>
+          <div class="text-center text-md-start">
+            <a href="#" class="d-block text-decoration-none py-2">Terms</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Privacy</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Help</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Accessibility</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Contact</a>
+
+          </div>
+        </div>
+         </div>
+     </section>
+
+   
+
+    <!-- Footer Section -->
+     <footer class="container">
+      <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p>© <span id="year">2025</span> CreaNova.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-icons">
+              <a href="#" class="text-dark"><i class="bi bi-facebook ms-3"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-youtube ms-3"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-linkedin ms-3"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-twitter-x ms-3"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

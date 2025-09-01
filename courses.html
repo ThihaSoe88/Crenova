@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="images/favi-con.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   <style>
+        .bg-navbar {
+        background-color: #413e37;
+      }
+      .navbar a {
+        color: white;
+      }
+      .active {
+        color: white !important;
+        font-weight: bold;
+        border-bottom: 2px solid white;
+      }
+      .navbar-nav a:hover {
+        color: white !important;
+        border-bottom: 2px solid white;
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg bg-navbar">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">CreaNova Academy</a>
+
+        <!-- Toggler icon -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!-- menu list -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- form -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+ <!--    Feature Courses -->
+      <div class="container my-3">
+      <h2 class="border-bottom">Featured Courses</h2>
+      <div class="row">
+        <div class="col-md-4 mt-2">
+          <div class="card">
+            <img src="https://creanova-seven.vercel.app/images/edited-feature-course-1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Frontend Development Fundamentals</h5>
+              <p class="card-text">
+                Learn HTML, CSS, and JavaScript basics and a popular frontend library to create engaging web interfaces with responsive design.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2">
+          <div class="card">
+            <img src="https://creanova-seven.vercel.app/images/edited-feature-course-2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Backend Development with Laravel</h5>
+              <p class="card-text">
+                Explore server-side programming with PHP and Laravel framework, covering RESTful API design, database interaction, and authentication.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2">
+          <div class="card">
+            <img src="https://creanova-seven.vercel.app/images/edited-feature-course-3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Full-Stack Development Capstone Project</h5>
+              <p class="card-text">
+                Apply frontend and backend skills to build and deploy a complete web application in a collaborative team setting.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses Details -->
+
+    <section class="container">
+      <h1 class="my-3 text-md-start mb-2 border-bottom">
+        Full-Stack Web Development Courses
+      </h1>
+      <div class="row my-3">
+        <div class="col-lg-4 mt-2">
+          <div class="container">
+            <div class="card">
+              <img
+                src="https://creanova-seven.vercel.app/images/edited-course-1.jpg"
+                alt="My Portfolio"
+              />
+              <div class="card-body">
+                <h3 class="h4 my-2">Web Development Fundamentals</h3>
+                <h5>Outlines</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>HTML and CSS Basics
+                  </li>
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Introduction to
+                    JavaScript
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Responsive Web Design
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Introduction to Git and
+                    Version Control
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Introduction to
+                    Bootstrap
+                  </li>
+                </ul>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-primary">
+                    Enroll
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <div class="container">
+            <div class="card">
+              <img
+                src="https://creanova-seven.vercel.app/images/edited-course-2.jpg"
+                alt="My Portfolio"
+              />
+              <div class="card-body">
+                <h3 class="h4 my-2">Frontend Development with React JS</h3>
+                <h5>Outlines</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Introduction to React
+                  </li>
+                  <li><i class="bi bi-flag-fill me-2"></i>State and Props</li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Responsive Web Design
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Handling Events and
+                    Forms
+                  </li>
+
+                  <li><i class="bi bi-flag-fill me-2"></i> React Router</li>
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i> Managing Application
+                    State with Redux
+                  </li>
+                </ul>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-primary">
+                    Enroll
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+          <div class="container">
+            <div class="card">
+              <img
+                src="https://creanova-seven.vercel.app/images/edited-course-3.jpg"
+                alt="My Portfolio"
+              />
+              <div class="card-body">
+                <h3 class="h4 my-2">Backend Development with Laravel</h3>
+                <h5>Outlines</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i> Introduction to PHP
+                  </li>
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Introduction to Laravel
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Database Interaction
+                    with Eloquent
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>RESTful API Development
+                  </li>
+
+                  <li>
+                    <i class="bi bi-flag-fill me-2"></i>Advanced Laravel
+                    Features
+                  </li>
+                </ul>
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-outline-primary">
+                    Enroll
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+     <!-- About Us Section -->
+     <section class="about-us container">
+      <div class="row my-3">
+        <div class="col-md-4 col-lg-3">
+          <h3 class="text-center text-md-start h6">Creanova Academy</h3>
+          <div class="text-center text-md-start">
+            <a href="#" class="d-block text-decoration-none py-2">About</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >What We Offer</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Careers</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Become a partner</a
+            >
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <h3 class="text-center text-md-start h6">Community</h3>
+          <div class="text-center text-md-start">
+            <a href="#" class="d-block text-decoration-none py-2">Mentees</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Partners</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Tech Blog</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Teaching Centers</a
+            >
+          </div>
+        </div>
+    
+        <div class="col-md-4 col-lg-3">
+          <h3 class="text-center text-md-start h6">More</h3>
+          <div class="text-center text-md-start">
+            <a href="#" class="d-block text-decoration-none py-2">Terms</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Privacy</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Help</a>
+            <a href="#" class="d-block text-decoration-none py-2"
+              >Accessibility</a
+            >
+            <a href="#" class="d-block text-decoration-none py-2">Contact</a>
+
+          </div>
+        </div>
+         </div>
+     </section>
+    <!-- Footer Section -->
+     <footer class="container">
+      <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p>© <span id="year">2025</span> CreaNova.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="social-icons">
+              <a href="#" class="text-dark"><i class="bi bi-facebook ms-3"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-youtube ms-3"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-linkedin ms-3"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-twitter-x ms-3"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

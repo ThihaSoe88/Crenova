@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+/* about section */
+.about-us a {
+  color: #e2b23c;
+  /* font-size: 18px; */
+}
+/* Footer Section */
+.about-us,
+footer {
+  background-color: #edebd7;
+}
