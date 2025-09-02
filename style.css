@@ -6,13 +6,34 @@
 body {
   font-family: "PT Sans", sans-serif;
 }
+
+/* navsection */
+.bg-navbar {
+  background-color: #413e37;
+}
+.navbar a {
+  color: white;
+}
+.active {
+  color: white !important;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+.navbar-nav a:hover {
+  color: white !important;
+  border-bottom: 2px solid white;
+}
+
+/* slider section */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 /* about section */
-.about-us a {
+#about-us a {
   color: #e2b23c;
-  /* font-size: 18px; */
 }
 /* Footer Section */
-.about-us,
+#about-us,
 footer {
   background-color: #edebd7;
 }
